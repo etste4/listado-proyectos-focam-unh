@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi sistema web</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOCAM Docente - Financiamientos vigentes</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="contenedor">
-    <h1>Mi sistema web</h1>
-    <p>Proyecto base en HTML, CSS y JavaScript</p>
+  <header class="header">
+    <div class="contenedor">
+      <h1>FOCAM Docente - Financiamientos vigentes</h1>
+      <p>Listado de proyectos de investigación</p>
+    </div>
+  </header>
 
-    <button id="btnProbar">Probare</button>
-    <div id="resultado"></div>
-  </div>
+  <main class="contenedor">
+    <section id="cards-container" class="cards-grid"></section>
+  </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
