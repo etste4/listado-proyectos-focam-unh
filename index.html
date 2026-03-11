@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>FOCAM Docente - Financiamientos vigentes</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="contenedor">
       <h1>FOCAM Docente - Financiamientos vigentes</h1>
@@ -14,8 +21,12 @@
     </div>
   </header>
 
+
   <main class="contenedor">
-    <section class="dashboard" id="dashboard">
+
+    <!-- DASHBOARD -->
+    <section class="dashboard">
+
       <div class="dashboard-card">
         <span class="dashboard-label">Total de proyectos</span>
         <strong id="total-proyectos">0</strong>
@@ -35,17 +46,21 @@
         <span class="dashboard-label">Vigentes</span>
         <strong id="total-vigentes">0</strong>
       </div>
+
     </section>
 
+
+    <!-- FILTROS -->
     <section class="filtros">
+
       <div class="filtro-grupo">
         <label for="buscador">Buscar</label>
         <input
           type="text"
           id="buscador"
-          placeholder="Buscar por título, investigador, resolución..."
-        />
+          placeholder="Buscar por título, investigador, resolución...">
       </div>
+
 
       <div class="filtro-grupo">
         <label for="filtro-anio">Año</label>
@@ -54,6 +69,7 @@
         </select>
       </div>
 
+
       <div class="filtro-grupo">
         <label for="filtro-instituto">Instituto</label>
         <select id="filtro-instituto">
@@ -61,19 +77,36 @@
         </select>
       </div>
 
+
       <div class="filtro-grupo">
         <label for="filtro-estado">Estado</label>
         <select id="filtro-estado">
           <option value="">Todos</option>
         </select>
       </div>
+
     </section>
 
-    <section id="cards-container" class="cards-grid"></section>
+
+    <!-- CARDS -->
+    <section id="cards-container" class="cards-grid">
+
+      <!-- aquí se cargan las cards automáticamente -->
+
+    </section>
+
   </main>
 
+
+  <!-- LIBRERIA PARA LEER CSV -->
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <!-- CONFIG -->
   <script src="config.js"></script>
+
+  <!-- SCRIPT PRINCIPAL -->
   <script src="script.js"></script>
+
+
 </body>
 </html>
