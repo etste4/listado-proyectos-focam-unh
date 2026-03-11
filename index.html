@@ -15,6 +15,60 @@
   </header>
 
   <main class="contenedor">
+    <section class="dashboard" id="dashboard">
+      <div class="dashboard-card">
+        <span class="dashboard-label">Total de proyectos</span>
+        <strong id="total-proyectos">0</strong>
+      </div>
+
+      <div class="dashboard-card">
+        <span class="dashboard-label">Ingeniería</span>
+        <strong id="total-ingenieria">0</strong>
+      </div>
+
+      <div class="dashboard-card">
+        <span class="dashboard-label">Sociales</span>
+        <strong id="total-sociales">0</strong>
+      </div>
+
+      <div class="dashboard-card">
+        <span class="dashboard-label">Vigentes</span>
+        <strong id="total-vigentes">0</strong>
+      </div>
+    </section>
+
+    <section class="filtros">
+      <div class="filtro-grupo">
+        <label for="buscador">Buscar</label>
+        <input
+          type="text"
+          id="buscador"
+          placeholder="Buscar por título, investigador, resolución..."
+        />
+      </div>
+
+      <div class="filtro-grupo">
+        <label for="filtro-anio">Año</label>
+        <select id="filtro-anio">
+          <option value="">Todos</option>
+        </select>
+      </div>
+
+      <div class="filtro-grupo">
+        <label for="filtro-instituto">Instituto</label>
+        <select id="filtro-instituto">
+          <option value="">Todos</option>
+        </select>
+      </div>
+
+      <div class="filtro-grupo">
+        <label for="filtro-estado">Estado</label>
+        <select id="filtro-estado">
+          <option value="">Todos</option>
+        </select>
+      </div>
+    </section>
+
     <section id="cards-container" class="cards-grid"></section>
   </main>
 

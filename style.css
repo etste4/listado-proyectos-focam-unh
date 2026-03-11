@@ -17,7 +17,7 @@ body {
 
 .contenedor {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -30,11 +30,76 @@ body {
   margin: 0;
 }
 
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+  margin: 28px 0 20px;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid #005baa;
+}
+
+.dashboard-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.dashboard-card strong {
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.filtros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.filtro-grupo {
+  display: flex;
+  flex-direction: column;
+}
+
+.filtro-grupo label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.filtro-grupo input,
+.filtro-grupo select {
+  height: 42px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0 12px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.filtro-grupo input:focus,
+.filtro-grupo select:focus {
+  border-color: #005baa;
+}
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
-  padding: 30px 0 40px;
+  padding: 0 0 40px;
 }
 
 .card {
@@ -45,16 +110,24 @@ body {
   border-left: 6px solid #005baa;
 }
 
+.card.ingenieria {
+  border-left-color: #005baa;
+}
+
+.card.sociales {
+  border-left-color: #d97706;
+}
+
 .card h2 {
   margin-top: 0;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.45;
   color: #0f172a;
 }
 
 .card p {
   margin: 8px 0;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .badges {
@@ -91,7 +164,7 @@ body {
   background: white;
   padding: 25px;
   border-radius: 12px;
-  margin: 30px 0;
+  margin: 20px 0 30px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   text-align: center;
 }
